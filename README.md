@@ -14,3 +14,11 @@ The predictions of each individual model are stacked together and used as input 
 
 # Bagging
 <img width="338" alt="image" src="https://github.com/user-attachments/assets/6a0718c1-310a-4573-a311-f98f821a6148">
+
+1. In bagging we build independent estimators on different samples of the original data set and average or vote across all the predictions.
+2. Bagging is a short form of *Bootstrap Aggregating. It is an ensemble learning approach used to improve the stability and accuracy of machine learning algorithms.
+3. Since multiple model predictions are averaged together to form the final predictions, Bagging reduces variance and helps to avoid overfitting. Although it is usually applied to decision tree methods, it can be used with any type of method.
+4. Bagging is a special case of the model averaging approach, in case of regression problem we take mean of the output and in case of classification we take the majority vote.
+5. Bagging is more helpfull if we have over fitting (high variance) base models.
+6. We can also build independent estimators of same type on each subset. These independent estimators also enable us to parallelly process and increase the speed.
+7. Most popular bagging estimator is 'Bagging Tress' also knows as 'Random Forest'
