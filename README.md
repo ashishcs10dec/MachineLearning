@@ -22,3 +22,11 @@ The predictions of each individual model are stacked together and used as input 
 5. Bagging is more helpfull if we have over fitting (high variance) base models.
 6. We can also build independent estimators of same type on each subset. These independent estimators also enable us to parallelly process and increase the speed.
 7. Most popular bagging estimator is 'Bagging Tress' also knows as 'Random Forest'
+
+# Boosting
+<img width="286" alt="image" src="https://github.com/user-attachments/assets/2cb3478a-9579-41c6-93a4-2b06a45096ea">
+
+1. In case of boosting, machine learning models are used one after the other and the predictions made by first layer models are used as input to next layer models. The last layer of models will use the predictions from all previous layers to get the final predictions.
+2. So boosting enables each subsequent model to boost the performance of the previous one by overcomming or reducing the error of the previous model.
+3. Unlike bagging, in case of boosting the base learners are trained in sequence on a weighted version of the data. Boosting is more helpful if we have biased base models.
+4. Boosting can be used to solve regression and classification problems.
